@@ -1,0 +1,196 @@
+                                            /* IMPORT DE FONTES DO GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+                                                /* ROOT PARA RESET DE CORES E FONTES */
+:root{ 
+    --cor-background: #197b91, #072a31, #000000;
+    --cor-texto: #F6F6F6;
+    --cor-destaque: #22D4FD;
+    --cor--hover: #127288;
+    --cor-link-pdf: #168097;
+    --cor-botoes-redessociais: transparent;
+    --cor-background-barraderolagem: #000000;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
+
+                                            /* RESET DE CONFIGURAÇÃO DA PÁGINA */
+*{
+    margin: 0; /* Reseta o valor da margem de todos os elementos da página */
+    padding: 0; /* Reseta o valor do preenchimento de todos os elementos da página */
+}
+
+                                            /* CONFIGURAÇÃO PADRÃO DA PÁGINA */
+body{
+    /* height: 100vh; */ 
+    box-sizing: border-box;
+    background-image: radial-gradient(var(--cor-background));
+    color: var(--cor-texto);
+}
+
+                                                        /* HEADER */
+.cabecalho{
+    padding: 2% 0% 0% 15%;
+}
+
+.cabecalho-menu{
+    display: flex;
+    gap: 3.75rem;
+}
+
+.cabecalho-menu-link{
+    font-family: var(--fonte-secundaria);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--cor-texto);
+    text-decoration: none;
+}
+
+.cabecalho-menu-link-pdf{
+    font-family: var(--fonte-secundaria);
+    font-size: 0.875rem;
+    font-weight: 600;
+    background-color: var(--cor-link-pdf);
+    color: var(--cor-texto);
+    text-decoration: none;
+    width: 6.875rem;
+    text-align: center;
+    border-radius: 36px;
+}
+
+                                                        /* MAIN */
+.apresentacao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 15%;
+    gap: 82px;
+}
+
+.apresentacao-conteudo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao-conteudo-titulo{
+    font-family: var(--fonte-primaria);
+    font-size: 1.25rem;
+}
+
+.titulo-destaque{
+    color: var(--cor-destaque);
+}
+
+.apresentacao-conteudo-descricao{
+    font-family: var(--fonte-secundaria);
+    font-size: 1.063rem;
+}
+
+.react-html-css{
+    color: var(--cor-destaque);
+}
+
+.apresentacao-links{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.apresentacao-links-subtitulo{
+    font-family: var(--fonte-primaria);
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.apresentacao-links-botoes{
+    background-color: var(--cor-botoes-redessociais);
+    width: 24%;
+    text-align: center;
+    border-radius: 36px;
+    font-size: 0.875rem;
+    padding: 5px 20px 5px 20px;
+    text-decoration: none;
+    color: var(--cor-texto);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    border: 2px solid var(--cor-destaque);
+    display: flex;
+    justify-content: center;
+    gap: 0.375rem;
+    animation: jump 0.6s linear infinite;
+}
+
+.apresentacao-links-imagem{
+    width: 1.125rem;
+}
+
+.apresentacao-links-botoes:hover{
+    background-color: var(--cor--hover);
+    animation: jump 0.2s linear infinite;
+}
+
+.apresentacao-foto{
+    width: 50%;
+}
+
+                                                        /* FOOTER */
+.rodape{
+    font-family: var(--fonte-secundaria);
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-align: center;
+    padding: 0.875rem;
+}
+
+@media (max-width: 1200px){
+    .cabecalho{
+        padding: 2%;
+    }
+
+    .cabecalho-menu{
+        justify-content: center;
+    }
+
+    .apresentacao{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .apresentacao-conteudo{
+        width: auto;
+    }
+}
+
+
+                                    /* COMANDOS DE TESTE DE ANIMAÇÕES, CORES, ALTERAÇÕES... */
+
+@keyframes jump{
+0%  {
+    transform: translateY(0px);
+}
+
+33%  {
+    transform: translateY(-4px);
+}
+
+66%  {
+    transform: translateY(0px);
+}
+}
+
+::-webkit-scrollbar {
+    width: 14px;               /* width of the entire scrollbar */
+  }
+::-webkit-scrollbar-track {
+    background-color: var(--cor-background-barraderolagem);      /* color of the tracking area */
+  }
+::-webkit-scrollbar-thumb {
+    background-color: var(--cor-destaque);    /* color of the scroll thumb */
+    border-radius: 5px;       /* roundness of the scroll thumb */
+  }
