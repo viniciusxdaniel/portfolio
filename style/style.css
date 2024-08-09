@@ -78,7 +78,7 @@ body{
 
 .apresentacao-conteudo-titulo{
     font-family: var(--fonte-primaria);
-    font-size: 1.875rem;
+    font-size: 2rem;
 }
 
 .titulo-destaque{
@@ -148,14 +148,15 @@ body{
     padding: 0.875rem;
 }
 
-                                                        /* RESPONDIVIDADE */
-@media (max-width: 720px){
+                                                        /* RESPONSIVIDADE MOBILE */
+@media (max-width: 450px){
     .cabecalho{
-        padding: 5%;
+        padding: 5% 1% 5% 1%;
     }
 
     .cabecalho-menu{
         justify-content: center;
+        gap: 40px;
     }
 
     .cabecalho-menu-link{
@@ -169,7 +170,7 @@ body{
 
     .apresentacao{
         flex-direction: column-reverse;
-        padding: 1% 10% 5% 10%;
+        padding: 8%;
     }
 
     .apresentacao-conteudo{
@@ -177,16 +178,16 @@ body{
     }
 
     .apresentacao-conteudo-titulo{
-        font-size: 34px;
+        font-size: 20px;
     }
 
     .apresentacao-conteudo-descricao{
-        font-size: 29px;
+        font-size: 13px;
     }
 }
 
 
-                                    /* COMANDOS DE TESTE DE ANIMAÇÕES, CORES, ALTERAÇÕES... */
+                                    /* TESTE DE ANIMAÇÕES, CORES, ALTERAÇÕES... */
 
 @keyframes jump{
 0%  {
