@@ -149,9 +149,9 @@ body{
 }
 
                                                         /* RESPONDIVIDADE */
-@media (max-width: 45rem){
+@media (max-width: 1200px){
     .cabecalho{
-        padding: 3%;
+        padding: 5%;
     }
 
     .cabecalho-menu{
@@ -159,17 +159,17 @@ body{
     }
 
     .cabecalho-menu-link{
-        font-size: 1.25rem;
+        font-size: 36px;
     }
 
     .cabecalho-menu-link-pdf{
-        font-size: 1.25rem;
-        width: 9.875rem;
+        font-size: 36px;
+        width: 280px;
     }
 
     .apresentacao{
         flex-direction: column-reverse;
-        padding: 10%;
+        padding: 1% 10% 5% 10%;
     }
 
     .apresentacao-conteudo{
@@ -177,11 +177,11 @@ body{
     }
 
     .apresentacao-conteudo-titulo{
-        font-size: 2.125rem;
+        font-size: 36px;
     }
 
     .apresentacao-conteudo-descricao{
-        font-size: 1rem;
+        font-size: 30px;
     }
 }
 
