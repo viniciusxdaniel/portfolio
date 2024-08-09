@@ -149,7 +149,7 @@ body{
 }
 
                                                         /* RESPONDIVIDADE */
-@media (max-width: 1200px){
+@media (max-width: 720px){
     .cabecalho{
         padding: 5%;
     }
@@ -159,12 +159,12 @@ body{
     }
 
     .cabecalho-menu-link{
-        font-size: 36px;
+        font-size: 16px;
     }
 
     .cabecalho-menu-link-pdf{
-        font-size: 36px;
-        width: 280px;
+        font-size: 16px;
+        width: 130px;
     }
 
     .apresentacao{
@@ -177,11 +177,11 @@ body{
     }
 
     .apresentacao-conteudo-titulo{
-        font-size: 36px;
+        font-size: 34px;
     }
 
     .apresentacao-conteudo-descricao{
-        font-size: 30px;
+        font-size: 29px;
     }
 }
 
